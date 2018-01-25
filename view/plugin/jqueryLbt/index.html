@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>carouselDemo</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<div class="carousel-content">
+		<ul class="carousel">
+			<li><img src="./images/a1.png"></li>
+			<li><img src="./images/a2.png"></li>
+			<li><img src="./images/a3.png"></li>
+			<li><img src="./images/a4.png"></li>
+			<li><img src="./images/a5.png"></li>
+		</ul>
+		<ul class="img-index"></ul>
+		<div class="carousel-prev"><img src="./images/left_btn1.png"></div>
+		<div class="carousel-next"><img src="./images/right_btn1.png"></div>
+	</div>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="./scripts/carousel.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".carousel-content").carousel({
+				carousel : ".carousel",//轮播图容器
+				indexContainer : ".img-index",//下标容器
+				prev : ".carousel-prev",//左按钮
+				next : ".carousel-next",//右按钮
+				timing : 5000,//自动播放间隔
+				animateTime : 800,//动画时间
+				auto : true,//是否自动播放
+			});
+
+			$(".carousel-prev").hover(function(){
+				$(this).find("img").attr("src","./images/left_btn2.png");
+			},function(){
+				$(this).find("img").attr("src","./images/left_btn1.png");
+			});
+			$(".carousel-next").hover(function(){
+				$(this).find("img").attr("src","./images/right_btn2.png");
+			},function(){
+				$(this).find("img").attr("src","./images/right_btn1.png");
+			});
+		});
+	</script>
+</body>
+</html>

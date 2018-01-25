@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- FooTable -->
+    <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+</head>
+<body>
+<div id = "wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="mailbox.html">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li>
+                    <a href="basicInfo.html"><i class="fa fa-list"></i> <span class="nav-label">基本信息</span></a>
+                </li>
+                <li>
+                    <a href="stageConf.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">阶段配置</span></a>
+                </li>
+                <li>
+                    <a href="team.html"><i class="fa fa-sitemap"></i> <span class="nav-label">团队配置</span></a>
+                </li>
+                <li>
+                    <a href="newsManage.html"><i class="fa fa-desktop"></i> <span class="nav-label">媒体报道</span></a>
+                </li>
+                <li>
+                    <a href="dataSum.html"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">数据汇总</span></a>
+                </li>
+                <li class="active">
+                    <a href="tradeInfo.html"><i class="fa fa-shopping-cart"></i> <span class="nav-label">交易信息</span></a>
+                </li>
+                <li>
+                    <a href="investor.html"><i class="fa fa-address-book"></i> <span class="nav-label">投资人浏览</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header" style="padding: 5px;">
+                    <a class="navbar-brand navbar-brand-custom" href="https://www.baidu.com">
+                        <img alt="Brand" src="assets/logo.svg" height="100%">
+                    </a>
+                    <a class="navbar-brand navbar-brand-custom" href="https://www.baidu.com">
+                        kingco.tech
+                    </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> 退出
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-9">
+                <h2>交易信息</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="index.html">主页</a>
+                    </li>
+                    <li class="active">
+                        <strong>交易信息</strong>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight ecommerce">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                <thead>
+                                    <tr>
+                                        <th>订单ID</th>
+                                        <th data-hide="phone">订单时间</th>
+                                        <th data-hide="phone">客户ID</th>
+                                        <th data-hide="phone">客户昵称</th>
+                                        <th data-hide="phone">交易金额</th>
+                                        <th data-hide="phone">账户余额</th>
+                                        <th data-hide="phone">代币数目</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="trade-list">
+
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td colspan="7">
+                                        <ul class="pagination pull-right"></ul>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2017
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mainly scripts -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+<!-- Data picker -->
+<script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<!-- FooTable -->
+<script src="js/plugins/footable/footable.all.min.js"></script>
+<!-- Page-Level Scripts -->
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            url: 'mock/tradeInfo.json',
+            type: 'get',
+        }).done(function (res) {
+            console.log(res.data)
+            var fragment = ``
+            res.data.forEach(function (val, index) {
+                fragment += `
+                    <tr>
+                        <td>${val.tradeId}</td>
+                        <td>${val.tradeTime}</td>
+                        <td>${val.customerId}</td>
+                        <td>${val.nickname}</td>
+                        <td>￥${val.tradePrice}</td>
+                        <td>￥${val.remaining}</td>
+                        <td>${val.tokenCount}</td>
+                    </tr>
+                `
+            })
+            $('.trade-list').html(fragment)
+            $('.footable').footable();
+            // $('#date_added').datepicker({
+            //     todayBtn: "linked",
+            //     keyboardNavigation: false,
+            //     forceParse: false,
+            //     calendarWeeks: true,
+            //     autoclose: true
+            // });
+        })
+    })
+</script>
+</body>
+</html>

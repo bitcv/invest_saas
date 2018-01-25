@@ -1,0 +1,13 @@
+{"Time":"2018-01-17 18:06:12","File":"/Users/JunK/projects/bitcv/model/DB.class.php","Line":24,"Error":"Mysql query error:SELECT * FROM investor_wallet WHERE investor_id=1 and wallet_type=1"}
+{"Time":"2018-01-17 18:11:24","File":"/Users/JunK/projects/bitcv/model/DB.class.php","Line":44,"Error":"Mysql query error:INSERT INTO investor_wallet(investor_id, wallet_type, private_key, public_key, address, ctime) VALUES(1, 1, 168b6fdad4d0770705ec9bcce89e6e0a8cb5c8f9b0056e4da5ea804035c4a002, 04114098ba41bde7f6c34d7aae9b56bed41aa8ac448b77758c4d91e0ef819f20829cbe320f5705d6bb55c1fd2e7b27fd225667041c8855287b3042950e2e47d2fe, 38515e22d345d2be65f589edbe0859eed1441b23, 1516183884)"}
+{"Time":"2018-01-17 18:12:47","File":"/Users/JunK/projects/bitcv/model/DB.class.php","Line":44,"Error":"Mysql query error:INSERT INTO investor_wallet(investor_id, wallet_type, private_key, public_key, address, ctime) VALUES(1, 1, '9cba8179332ce379d6c20885b3420bae37903f4ec4039bca85f62a8e45c91e33', '04a29726243bc1375c896bb9919709c1d1ea315becb9a4045fa4c278b5760f69ca249d2ca54aeecca32a4a11c6c4e16df4811c2df60bd83479178807f2fe32203b', '7a43c9b14276a4e227922d8aaba2d635d1e751f1', 1516183967)"}
+{"Time":"2018-01-17 19:54:13","File":"/Users/JunK/projects/bitcv/action/project/InitProjInfo.class.php","Line":16,"Error":"未找到项目信息"}
+{"Time":"2018-01-17 19:57:17","File":"/Users/JunK/projects/bitcv/action/project/Login.class.php","Line":24,"Error":"未找到投资人信息"}
+{"Time":"2018-01-19 21:17:13","File":"/Users/JunK/projects/bitcv/action/project/Login.class.php","Line":24,"Error":"未找到投资人信息"}
+{"Time":"2018-01-19 21:18:11","File":"/Users/JunK/projects/bitcv/action/BaseAction.php","Line":16,"Error":"Param error"}
+{"Time":"2018-01-19 23:07:54","File":"/Users/JunK/projects/bitcv/model/DB.class.php","Line":24,"Error":"Mysql query error:SELECT * FROM currency_price WHERE to_currency_symbol='eth' AND from_currency_symbol IN SELECT currency_symbol FROM proj_wallet WHERE proj_id=1"}
+{"Time":"2018-01-19 23:08:48","File":"/Users/JunK/projects/bitcv/model/DB.class.php","Line":24,"Error":"Mysql query error:SELECT * FROM currency_price WHERE to_currency_symbol='eth' AND from_currency_symbol IN SELECT currency_symbol FROM proj_wallet WHERE proj_id=1"}
+{"Time":"2018-01-19 23:14:08","File":"/Users/JunK/projects/bitcv/action/project/GetInvestorInfo.class.php","Line":17,"Error":"未找到投资人信息"}
+{"Time":"2018-01-19 23:14:12","File":"/Users/JunK/projects/bitcv/action/project/Login.class.php","Line":24,"Error":"未找到投资人信息"}
+{"Time":"2018-01-19 23:25:20","File":"/Users/JunK/projects/bitcv/action/project/GetInvestorInfo.class.php","Line":17,"Error":"未找到投资人信息"}
+{"Time":"2018-01-19 23:27:59","File":"/Users/JunK/projects/bitcv/action/project/GetInvestorInfo.class.php","Line":17,"Error":"未找到投资人信息"}

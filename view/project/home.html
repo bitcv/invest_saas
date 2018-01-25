@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>bitcv</title>
+        <meta name="viewport" content="width=device-width" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- Web Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+        <!-- Bootstrap core CSS -->
+        <link href="/view/idea/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Font Awesome CSS -->
+        <link href="/view/idea/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+        <!-- Fontello CSS -->
+        <link href="/view/idea/fonts/fontello/css/fontello.css" rel="stylesheet">
+
+        <!-- Plugins -->
+        <link href="/view/idea/plugins/rs-plugin-5/css/settings.css" rel="stylesheet">
+        <link href="/view/idea/plugins/rs-plugin-5/css/layers.css" rel="stylesheet">
+        <link href="/view/idea/plugins/rs-plugin-5/css/navigation.css" rel="stylesheet">
+        <link href="/view/idea/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+        <link href="/view/idea/css/animations.css" rel="stylesheet">
+        <link href="/view/idea/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet">
+        <link href="/view/idea/plugins/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet">
+
+        <!-- iDea core CSS file -->
+        <link href="/view/idea/css/style.css" rel="stylesheet">
+
+        <!-- Color Scheme (In order to change the color scheme, replace the red.css with the color scheme that you prefer)-->
+        <link href="/view/idea/css/skins/red.css" rel="stylesheet">
+
+        <!-- Custom css -->
+        <link href="/view/idea/css/custom.css" rel="stylesheet">
+
+        <!--filpcountdown-->
+        <link rel="stylesheet" type="text/css" href="/view/plugin/flipcountdown/jquery.flipcountdown.css" />
+
+    </head>
+    <body class="front">
+        <div class="page-wrapper">
+
+            <header class="header dark header-small fixed clearfix" style="position:fixed;width:100vw;z-index:10;background-color:#79377C">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="header-left clearfix">
+                                <div class="logo">
+                                    <a href="index.html"><img id="logo" src="/static/logo/<?php echo $company_logo?>" alt="iDea"></a>
+                                </div>
+                                <div class="site-slogan">
+                                    <?php echo $company_name?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="header-right clearfix">
+                                <div class="main-navigation animated">
+                                    <nav class="navbar navbar-default" role="navigation">
+                                        <div class="container-fluid">
+                                            <div class="collapse navbar-collapse scrollspy" id="navbar-collapse-1">
+                                                <ul class="smooth-scroll nav navbar-nav navbar-left">
+                                                    <li>
+                                                        <a href="#projInfo">项目简介</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#progress">募资进度</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#team">团队成员</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#media">媒体报道</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#timeline">里程碑</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="header-right hidden-sm hidden-xs">
+                                <a class="btn radius btn-primary" target="_blank" href="/project.php?page=profile">获取数字货币</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div style="height:84px;width:100vw"></div>
+
+            <!--<div class="carousel-content-jquery">-->
+                <!--<ul class="carousel-jquery" style="display:inline">-->
+                    <!--<li><img src="/view/plugin/jqueryLbt/images/a1.png"></li>-->
+                    <!--<li><img src="/view/plugin/jqueryLbt/images/a2.png"></li>-->
+                    <!--<li><img src="/view/plugin/jqueryLbt/images/a3.png"></li>-->
+                    <!--<li><img src="/view/plugin/jqueryLbt/images/a4.png"></li>-->
+                    <!--<li><img src="/view/plugin/jqueryLbt/images/a5.png"></li>-->
+                <!--</ul>-->
+                <!--<ul class="img-index"></ul>-->
+                <!--<div class="carousel-prev-jquery"><img src="/view/plugin/jqueryLbt/images/left_btn1.png"></div>-->
+                <!--<div class="carousel-next-jquery"><img src="/view/plugin/jqueryLbt/images/right_btn1.png"></div>-->
+            <!--</div>-->
+
+            <!--===========================================================================-->
+
+            <section id="projInfo" class="main-container">
+                <div class="container">
+                    <h1 class="text-center">项目简介</h1>
+                    <div class="separator"></div>
+                    <div class="flex-center">
+                        <p class="lead text-center" style="max-width:600px"><?php echo $intro ?></p>
+                    </div>
+                    <br>
+                        <div class="flex-center">
+                            <div class="panel-group panel-default" id="accordion" style="width:800px">
+                                <?php foreach($advantageList as $index => $advantage) { ?>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $index ?>">
+                                                <i class="fa fa-bold"></i><?php echo $advantage['title'] ?>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse<?php echo $index ?>" class="panel-collapse collapse in">
+                                        <div class="panel-body" style="min-height: 150px">
+                                            <?php echo $advantage['detail'] ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php }?>
+                            </div>
+                        </div>
+                    <!--</div>-->
+                    <br>
+                </div>
+            </section>
+
+            <!--===========================================================================-->
+            <section id="progress" class="main-container gray-bg">
+                <h1 class="text-center">募资进度</h1>
+                <div class="separator"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 flex-center">
+                            <h3>代币售卖第<?php echo floor(((strtotime(date('Y-m-d'), time()) - strtotime(date('Y-m-d', $start_time))) / (24 * 3600) + 1) / 7) + 1 ?>周</h3>
+                            <!--<p>第<?php echo ((strtotime(date('Y-m-d'), time()) - strtotime(date('Y-m-d', $start_time))) / (24 * 3600)) % 7 + 1 ?>天</p>-->
+                            <p>截止日期：<?php echo date('Y-m-d H:i:s', $end_time) ?></p>
+                            <h4>今日代币价格：<?php echo floatval($token_price) ?> RMB</h4>
+                            <table style="width:240px;table-layout:fixed">
+                                <tbody style="background-color:rgba(0,0,0,0)">
+                                    <tr>
+                                        <td style="text-align:center">小时</td>
+                                        <td style="text-align:center">分钟</td>
+                                        <td style="text-align:center">秒</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div id="retroclockbox1"></div>
+                        </div>
+
+
+                        <!-- main start -->
+                        <!-- ================ -->
+                        <div class="main col-md-6 flex-center">
+                            <h2><?php echo floatval($total_money) ?> RMB</h2>
+                            <p>已募集总金额</p>
+                            <h4>计划募资金额：<?php echo floatval($plan_money) ?> RMB</h4>
+                            <br>
+                            <div class="progress" style="width:400px">
+                                <div class="progress-bar progress-bar-success" role="progressbar" data-animate-width="<?php echo round($total_money / $plan_money, 3) * 100 ?>%">
+                                    <span class="object-non-visible" data-animation-effect="fadeInLeftBig" data-effect-delay="600">已完成<?php echo round($total_money / $plan_money, 3) * 100 ?>%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width:100%;text-align:center">
+                        <a class="btn radius btn-primary" target="_blank" href="/project.php?page=profile">马上购买</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--===========================================================================-->
+            <!-- section start -->
+            <!-- ================ -->
+            <div id="team" class="section clearfix">
+                <div class="container">
+
+                    <h1 class="text-center">团队成员</h1>
+                    <div class="separator"></div>
+
+                    <div class="row grid-space-20 flex-center-row">
+                        <?php foreach($projMemberList as $projMember) { ?>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="overlay-container">
+                                <div class="box-style-1 gray-bg team-member">
+                                    <img src="/view/idea/images/team-member-1.jpg" style="border-radius: 50%" alt="">
+                                    <h3><?php echo $projMember['name'] ?></h3>
+                                    <?php echo $projMember['position'] ?>
+                                </div>
+                                <div class="overlay flex-center">
+                                    <p style="padding:20px"><?php echo $projMember['intro'] ?></p>
+                                </div>
+                            </div>
+                        </div>
+                        <?php } ?>
+                        <div class="space"></div>
+                    </div>
+                </div>
+                <!-- section end -->
+
+                <!--===========================================================================-->
+                <section id="media" class="section gray-bg text-muted footer-top clearfix">
+                    <div class="container">
+                        <div class="row">
+                            <h1 class="text-center" style="color:#343434">媒体报道</h1>
+                            <div class="separator"></div>
+                            <div class="col-md-12">
+                                <div class="owl-carousel clients">
+                                    <?php foreach($projReportList as $projReport) { ?>
+                                    <div class="client">
+                                        <a href="<?php $projReport['url'] ?>"><img src="/static/media/<?php echo $projReport['logo'] ?>" alt=""></a>
+                                    </div>
+                                    <?php } ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--===========================================================================-->
+                <section id="timeline" class="main-container">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="main col-md-12">
+                                <h1 class="text-center">里程碑</h1>
+                                <div class="separator"></div>
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <!-- timeline start -->
+                                        <div class="timeline row">
+                                            <div class="timeline-icon hidden-xs"><i class="fa fa-angle-double-up"></i></div>
+                                            <div class="timeline-date-label clearfix"><?php echo date('M Y') ?></div>
+                                            <!-- timeline item start -->
+                                            <?php foreach($milestoneList as $index => $milestone) { ?>
+                                            <div class="timeline-item object-non-visible <?php $index/2 == 0 ? '' : 'pull-right'?>" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
+                                                <article class="clearfix blogpost">
+                                                    <div class="blogpost-body">
+                                                        <div class="post-info">
+                                                            <span class="day"><?php echo date(d, $milestone['timestamp']) ?></span>
+                                                            <span class="month"><?php echo date('n', $milestone['timestamp']) ?>月</span>
+                                                        </div>
+                                                        <div class="blogpost-content">
+                                                            <header>
+                                                                <h2 class="title"><a href="blog-post.html"><?php echo $milestone['title'] ?></a></h2>
+                                                                <div class="submitted"><?php echo date('Y年m月d日', $milestone['timestamp']) ?></div>
+                                                            </header>
+                                                            <p><?php echo $milestone['detail'] ?></p>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <?php } ?>
+                                            <!-- timeline item end -->
+                                        </div>
+                                        <!-- timeline end -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main end -->
+                        </div>
+                    </div>
+                </section>
+
+                <!--===========================================================================-->
+                <footer id="footer">
+                    <div class="footer" style="background-color:#79377C;color:#cdcdcd">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="footer-content">
+                                        <div class="logo-footer"><img id="logo-footer" src="/static/logo/<?php echo $company_logo ?>" alt="" style="width:100px;height:100px"></div>
+                                        <p><?php echo $company_name ?></p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="list-icons">
+                                                    <li><i class="fa fa-map-marker pr-10"></i><?php echo $company_addr ?></li>
+                                                    <li><i class="fa fa-envelope-o pr-10"></i><?php echo $company_email ?></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="page-about.html" class="link"><span>Read More</span></a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="footer-content">
+                                        <h2 style="color:#cdcdcd">联系我们</h2>
+                                        <div class="alert alert-success hidden" id="MessageSent2" style="color:#cdcdcd">
+                                            我们已经收到了您的邮件，将尽快与您联系，谢谢！
+                                        </div>
+                                        <div class="alert alert-danger hidden" id="MessageNotSent2" style="color:#cdcdcd">
+                                            网络错误，请刷新页面重试！
+                                        </div>								
+                                        <form role="form" id="footer-form">
+                                            <div class="form-group has-feedback">
+                                                <label class="sr-only" for="name2">姓名</label>
+                                                <input type="text" class="form-control" id="name2" placeholder="请输入您的姓名" name="name2" style="color:#cdcdcd">
+                                                <i class="fa fa-user form-control-feedback"></i>
+                                            </div>
+                                            <div class="form-group has-feedback">
+                                                <label class="sr-only" for="email2">邮箱</label>
+                                                <input type="email" class="form-control" id="email2" placeholder="请输入您的邮箱地址" name="email2" style="color:#cdcdcd">
+                                                <i class="fa fa-envelope form-control-feedback"></i>
+                                            </div>
+                                            <div class="form-group has-feedback">
+                                                <label class="sr-only" for="message2">内容</label>
+                                                <textarea class="form-control" rows="4" id="message2" placeholder="请输入内容" name="message2" style="color:#cdcdcd"></textarea>
+                                                <i class="fa fa-pencil form-control-feedback"></i>
+                                            </div>
+                                            <input type="submit" value="发送" class="submit-button btn btn-default">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <?php echo 
+            '<script type="text/javascript">' . 'var projInfo = ' . json_encode($rtn['data']) . '</script>'
+            ?>
+
+            <!-- Jquery and Bootstap core js files -->
+            <script type="text/javascript" src="/view/idea/plugins/jquery.min.js"></script>
+            <script type="text/javascript" src="/view/idea/bootstrap/js/bootstrap.min.js"></script>
+
+            <!-- Modernizr javascript -->
+            <script type="text/javascript" src="/view/idea/plugins/modernizr.js"></script>
+
+            <!-- jQuery REVOLUTION Slider  -->
+            <script type="text/javascript" src="/view/idea/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+            <script type="text/javascript" src="/view/idea/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+
+            <!-- Isotope javascript -->
+            <script type="text/javascript" src="/view/idea/plugins/isotope/imagesloaded.pkgd.min.js"></script>
+            <script type="text/javascript" src="/view/idea/plugins/isotope/isotope.pkgd.min.js"></script>
+
+            <!-- Owl carousel javascript -->
+            <script type="text/javascript" src="/view/idea/plugins/owl-carousel/owl.carousel.js"></script>
+
+            <!-- Magnific Popup javascript -->
+            <script type="text/javascript" src="/view/idea/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+            <!-- Appear javascript -->
+            <script type="text/javascript" src="/view/idea/plugins/jquery.appear.js"></script>
+
+            <!-- Count To javascript -->
+            <script type="text/javascript" src="/view/idea/plugins/jquery.countTo.js"></script>
+
+            <!-- Knob javascript -->
+            <script type="text/javascript" src="/view/idea/plugins/jquery.knob.min.js"></script>
+
+            <!-- Parallax javascript -->
+            <script src="/view/idea/plugins/jquery.parallax-1.1.3.js"></script>
+
+            <!-- Contact form -->
+            <script src="/view/idea/plugins/jquery.validate.js"></script>
+
+            <!-- SmoothScroll javascript -->
+            <script type="text/javascript" src="/view/idea/plugins/jquery.browser.js"></script>
+            <script type="text/javascript" src="/view/idea/plugins/SmoothScroll.js"></script>
+
+            <!-- Initialization of Plugins -->
+            <script type="text/javascript" src="/view/idea/js/template.js"></script>
+
+            <!--flipcountdown-->
+            <script type="text/javascript" src="/view/plugin/flipcountdown/jquery.flipcountdown.js"></script>
+            <script type="text/javascript" src="/view/plugin/jqueryLbt//scripts/carousel.js"></script>
+
+            <!-- Custom Scripts -->
+            <script type="text/javascript" src="/view/idea/js/custom.js"></script>
+
+            <script type="text/javascript" src="/view/project/home.js"></script>
+    </body>
+</html>

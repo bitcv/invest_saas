@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "tradeId": 10000,
+      "tradeTime": "2017/12/12 04:00:00",
+      "customerId": 100,
+      "nickname": "布斯",
+      "tradePrice": 1500,
+      "remaining": 100,
+      "tokenCount": 235
+    },
+    {
+      "tradeId": 10001,
+      "tradeTime": "2017/12/15 15:00:00",
+      "customerId": 101,
+      "nickname": "云",
+      "tradePrice": 18,
+      "remaining": 10,
+      "tokenCount": 2325
+    },
+    {
+      "tradeId": 10002,
+      "tradeTime": "2017/12/21 21:00:00",
+      "customerId": 100,
+      "nickname": "布斯",
+      "tradePrice": 16,
+      "remaining": 12,
+      "tokenCount": 15
+    },
+    {
+      "tradeId": 10003,
+      "tradeTime": "2017/12/22 04:10:00",
+      "customerId": 100,
+      "nickname": "布斯",
+      "tradePrice": 1500,
+      "remaining": 112,
+      "tokenCount": 235
+    },
+    {
+      "tradeId": 10004,
+      "tradeTime": "2017/12/23 14:00:00",
+      "customerId": 101,
+      "nickname": "云",
+      "tradePrice": 22,
+      "remaining": 12,
+      "tokenCount": 231
+    },
+    {
+      "tradeId": 10005,
+      "tradeTime": "2018/01/01 01:00:00",
+      "customerId": 102,
+      "nickname": "盖茨",
+      "tradePrice": 111,
+      "remaining": 12,
+      "tokenCount": 153
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "account": 100,
+      "nickname": "小白0",
+      "balance": 15,
+      "remaining": 200
+    },
+    {
+      "id": 1,
+      "account": 101,
+      "nickname": "小白1",
+      "balance": 155,
+      "remaining": 500
+    },
+    {
+      "id": 2,
+      "account": 102,
+      "nickname": "小白2",
+      "balance": 150,
+      "remaining": 3
+    },
+    {
+      "id": 3,
+      "account": 103,
+      "nickname": "小白3",
+      "balance": 18,
+      "remaining": 12
+    }
+  ]
+}

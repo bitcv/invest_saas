@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "img": "img/p1.jpg",
+      "url": "http://www.baidu.com"
+    },
+    {
+      "id": 1,
+      "img": "img/p2.jpg",
+      "url": "http://www.baidu.com"
+    },
+    {
+      "id": 2,
+      "img": "img/p3.jpg",
+      "url": "http://www.baidu.com"
+    }
+  ]
+}

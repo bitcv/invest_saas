@@ -1,0 +1,28 @@
+div.section-container {
+
+}
+div.main-section {
+    vertical-align: top;
+    display: inline-block;
+    width: calc(100% - 300px);
+}
+div.main-section>div.module-box {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+div.left-box {
+    display: inline-block;
+    width: 45%;
+}
+div.right-box {
+    display: inline-block;
+    width: 45%;
+}
+div.aside-section {
+    vertical-align: top;
+    display: inline-block;
+    width: 250px;
+    margin-left: 40px;
+}

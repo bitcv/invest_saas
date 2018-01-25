@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div id = "wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="mailbox.html">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li>
+                    <a href="basicInfo.html"><i class="fa fa-list"></i> <span class="nav-label">基本信息</span></a>
+                </li>
+                <li>
+                    <a href="stageConf.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">阶段配置</span></a>
+                </li>
+                <li>
+                    <a href="team.html"><i class="fa fa-sitemap"></i> <span class="nav-label">团队配置</span></a>
+                </li>
+                <li class="active">
+                    <a href="newsManage.html"><i class="fa fa-desktop"></i> <span class="nav-label">媒体报道</span></a>
+                </li>
+                <li>
+                    <a href="dataSum.html"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">数据汇总</span></a>
+                </li>
+                <li>
+                    <a href="tradeInfo.html"><i class="fa fa-shopping-cart"></i> <span class="nav-label">交易信息</span></a>
+                </li>
+                <li>
+                    <a href="investor.html"><i class="fa fa-address-book"></i> <span class="nav-label">投资人浏览</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header" style="padding: 5px;">
+                    <a class="navbar-brand navbar-brand-custom" href="https://www.baidu.com">
+                        <img alt="Brand" src="assets/logo.svg" height="100%">
+                    </a>
+                    <a class="navbar-brand navbar-brand-custom" href="https://www.baidu.com">
+                        kingco.tech
+                    </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> 退出
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-9">
+                <h2>媒体报道</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="index.html">主页</a>
+                    </li>
+                    <li class="active">
+                        <strong>媒体报道</strong>
+
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight custom-container">
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> kingco &copy; 2014-2017
+            </div>
+        </div>
+        <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content animated bounceInRight">
+                    <div class="modal-header">
+                        <i class="fa fa-laptop modal-icon"></i>
+                        <h6 class="modal-title">媒体图片</h6>
+                    </div>
+                    <div class="modal-body">
+                        <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                            <div class="form-control" data-trigger="fileinput">
+                                <i class="glyphicon glyphicon-file fileinput-exists"></i>
+                                <span class="fileinput-filename"></span>
+                            </div>
+                            <span class="input-group-addon btn btn-default btn-file">
+                                    <span class="fileinput-new">选择图片</span>
+                                    <span class="fileinput-exists">修改</span>
+                                    <input type="file" name="..." accept=".jpg, .jpeg, .png" class="img-input"/>
+                                </span>
+                            <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">移除</a>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon3">url</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary save-img" data-dismiss="modal">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mainly scripts -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+<!-- Jasny -->
+<script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<!---->
+<script>
+    $(document).ready(function () {
+        var fragment = ``
+        var activeIndex = 0
+        var modal = $("#myModal");
+        modal.on("show.bs.modal", function(e) {
+            var btn = $(e.relatedTarget),
+                id = btn.data("id");
+            activeIndex = id
+        })
+        $(document).on('click', '.save-img', function () {
+            var file = $('input[type="file"]')[0].files[0];
+            var reader = new FileReader();
+            var imgFile;
+            reader.onload=function(e) {
+                imgFile = e.target.result;
+                $(".custom-img-container[data-id=" + activeIndex + "] img").attr('src', imgFile)
+            };
+            reader.readAsDataURL(file);
+            $(".custom-img-container[data-id=" + activeIndex + "] .url-container").text($('#basic-url').val())
+            // ajax发送删除数据
+        })
+        $.ajax({
+            url: 'mock/publicResource.json',
+            type: 'get'
+        }).done(function (res) {
+            res.data.forEach(function (val, index) {
+                fragment += `
+                    <div class="file-box custom-img-container" data-id="${val.id}">
+                        <div class="file">
+                            <span class="corner"></span>
+                            <div class="image">
+                                <img alt="image" class="img-responsive" src="${val.img}">
+                            </div>
+                            <div class="file-name url-container">
+                                ${val.url}
+                            </div>
+                            <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#myModal" data-id="${val.id}">
+                                修改
+                            </button>
+                            <button type="button" class="btn btn-default btn-block">删除</button>
+                            <button type="button" class="btn btn-default btn-block">查看</button>
+                        </div>
+                    </div>
+                `
+                $('.custom-container').html(fragment)
+            })
+        })
+    })
+</script>
+</body>
+</html>
